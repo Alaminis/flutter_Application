@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "MyApp",
+          style: TextStyle(fontSize: 24, color: Colors.red),
+        ),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Container(
+          width: 300,
+          height: 200,
+          color: Colors.yellow,
+          child: const Center(
+              child: Text(
+            "This is my fist Application",
+            style: TextStyle(
+                fontSize: 23,
+                color: Colors.red,
+                fontWeight: FontWeight.bold,
+                backgroundColor: Colors.blue),
+          )),
+        ),
+      ),
+      drawer: Drawer(),
+    );
+  }
+}
